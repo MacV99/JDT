@@ -1,0 +1,575 @@
+.section-m1 {
+  margin: 40px 0;
+}
+
+body {
+  width: 100%;
+}
+
+button.normal {
+  font-size: 14px;
+  font-weight: 600;
+  padding: 15px 30px;
+  color: #000;
+  background-color: #fff;
+  border-radius: 2px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  transition: 0.2s ease;
+}
+
+button.white {
+  font-size: 13px;
+  font-weight: 600;
+  padding: 11px 18px;
+  color: #fff;
+  background-color: transparent;
+  cursor: pointer;
+  border: 1px solid #fff;
+  outline: none;
+  transition: 0.2s ease;
+}
+
+
+#title-page {
+
+  padding: 21px 10%;
+  background-color: #e8edff;
+  height: 350px;
+}
+
+#title-page p {
+  text-align: justify;
+}
+
+
+#hero img {
+  height: auto;
+  width: 100%;
+}
+
+
+#product1 {
+  gap: 7px;
+}
+
+#product1 .bi-arrows,
+#product1 div.arrows,
+.bi-arrow-down-circle-fill,
+div.arrows {
+  display: none;
+}
+
+#productsContainer {
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 20px;
+}
+
+#product1 .pro {
+  width: 230px;
+  height: 280px;
+  padding: 14px;
+  box-shadow: 0 0 14px rgba(0, 0, 0, 0.35);
+  border-radius: 2px;
+  cursor: pointer;
+  transition: ease 0.2s;
+  position: relative;
+  background-color: rgb(255, 255, 255);
+  flex: 0 0 auto;
+}
+
+#product1 .pro:hover {
+  box-shadow: 0 0 14px rgba(0, 0, 0, 0.70);
+}
+
+#product1 .pro .des {
+  gap: 7px;
+}
+
+#product1 .pro .des h5 {
+  font-size: 14px;
+  color: var(--black-color);
+  text-align: center;
+}
+
+#product1 .pro img {
+  height: 140px;
+  margin-bottom: 14px;
+  padding: 14px;
+}
+
+#product1 .pro .star i {
+  color: darkorange;
+  font-size: 14px;
+}
+
+#product1 .pro .bi-cart {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 2px;
+  font-weight: 500;
+  position: absolute;
+  bottom: 14px;
+  right: 14px;
+  background-color: #00000018;
+
+}
+
+
+
+
+#close {
+  display: none;
+}
+
+
+
+#v-product {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #00000080;
+  padding: 0 10%;
+  backdrop-filter: blur(7px);
+  z-index: 20;
+  color: white;
+  animation: backShadow 150ms ease-in-out;
+}
+
+@keyframes backShadow {
+  from {
+    background-color: #00000000;
+    backdrop-filter: blur(0px);
+  }
+
+  to {
+    background-color: #00000080;
+    backdrop-filter: blur(7px);
+  }
+}
+
+#v-product .bi-x-lg {
+  display: flex;
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  font-size: 21px;
+  cursor: pointer;
+  color: var(--black-color);
+  padding: 7px;
+  border-radius: 2px;
+  background-color: var(--grey-color);
+
+}
+
+#v-product>div {
+  border: solid 1px #00000018;
+  background-color: white;
+  padding: 70px 35px;
+  border-radius: 2px;
+  width: 90%;
+  max-width: 700px;
+  gap: 21px;
+  position: relative;
+  filter: drop-shadow(0 0 14px rgba(0, 0, 0, 0.534));
+  height: 400px;
+  animation: openInfo 150ms ease-in-out;
+}
+
+@keyframes openInfo {
+  from {
+    opacity: 0;
+    transform: scale(0.4);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+#v-product img {
+  min-width: 35%;
+  height: 100%;
+  background-color: rgba(102, 51, 153, 0);
+  object-fit: contain;
+}
+
+#v-product>div>div {
+  align-items: start;
+}
+
+#v-product>div>div h2 {
+  text-align: left;
+}
+
+#v-product>div>div>div {
+  gap: 21px;
+}
+
+#v-product #btn-buy {
+  background-color: #009600;
+  font-size: 14px;
+  border-radius: 2px;
+  padding: 14px 21px;
+  color: white;
+}
+
+#v-product #btn-buy i {
+  color: white;
+}
+
+
+#v-product #btn-buy i {
+  font-size: 21px;
+  padding-right: 7px;
+}
+
+
+/* TRAYECTORIA */
+#path {
+  gap: 7px;
+  /* height: 500px; */
+}
+
+#path .bi-arrows {
+  animation: bounce-x-y 6s ease-in-out infinite;
+  font-size: 28px;
+}
+
+#path>div {
+  height: 340px;
+  width: 100%;
+  overflow-y: auto;
+  justify-content: start;
+  gap: 28px;
+  /* padding: 14px 0; */
+  scroll-snap-type: y mandatory;
+}
+
+#path>div>div {
+  width: 100%;
+  gap: 14px;
+  justify-content: flex-start;
+  scroll-snap-align: center;
+}
+
+#path>div>div h4 {
+  width: 10%;
+  min-width: 70px;
+}
+
+#path>div>div>div {
+  gap: 14px;
+  justify-content: flex-start;
+  width: fit-content;
+  overflow-x: auto;
+  padding: 0 14px;
+  scroll-snap-type: x mandatory;
+}
+
+#path img {
+  flex: 0 0 auto;
+  width: 310px;
+  height: 310px;
+  border-radius: 2px;
+  scroll-snap-align: center;
+  object-fit: cover;
+
+}
+
+/* MODAL DE IMAGEN TRAYECTORIA */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.85);
+  backdrop-filter: blur(7px);
+  z-index: 100;
+}
+
+.modal img {
+  width: auto;
+  max-width: 50%;
+  height: auto;
+  max-height: 90%;
+  border-radius: 2px;
+  box-shadow: 0 0 14px rgba(0, 0, 0, 0.35);
+}
+
+.hidden {
+  display: none;
+}
+
+
+/* TESTIMONIALS */
+#testimonials {
+  background-color: #e9f6ff;
+}
+
+
+/* SLIDER TESTIMONIALS */
+#testimonials .slider {
+  display: flex;
+  width: 100%;
+  max-width: 700px;
+  margin-top: 21px;
+}
+
+/* .slider .slider-item:not(.slider-item:first-child) {
+  display: none;
+} */
+
+#testimonials .slider-item {
+  width: 100%;
+  height: 300px;
+  max-width: 900px;
+  align-items: flex-start;
+  gap: 14px;
+  height: auto;
+}
+
+#testimonials .slider-item>div {
+  gap: 7px;
+}
+
+#testimonials .slider-item iframe {
+  max-width: 210px;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 2px;
+}
+
+#testimonials .slider-item h4 {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+#testimonials .arrows {
+  gap: 28px;
+  margin-top: 14px;
+  display: none;
+}
+
+#testimonials .arrows button {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  border: none;
+  background-color: #ffffff;
+  color: var(--black-color);
+  font-weight: 800;
+  font-size: 14px;
+  padding-top: 3px;
+  box-shadow: 0 0 14px rgba(0, 0, 0, 0.35);
+  cursor: pointer;
+}
+
+
+.vimeo>div {
+  gap: 21px;
+  flex-wrap: wrap;
+}
+
+
+.vimeo .video {
+  width: 300px;
+  height: 600px;
+  padding: 0 !important;
+  overflow: hidden;
+}
+
+.vimeo iframe {
+  border-radius: 2px;
+  width: 400px;
+}
+
+
+#nosotros {
+  text-align: justify;
+  gap: 21px;
+  max-width: 1400px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+#nosotros div {
+  padding: 14px;
+  max-width: 700px;
+  justify-content: flex-start;
+  box-shadow: 0 0 14px rgba(0, 0, 0, 0.35);
+
+}
+
+#nosotros div h3 {
+  align-self: baseline;
+}
+
+
+
+@media (max-width: 799px) {
+
+  #hero {
+    height: auto;
+
+  }
+
+  #v-product>div {
+    height: auto;
+    max-height: 520px;
+    width: 100%;
+    flex-direction: column;
+    padding: 10%;
+    gap: 7px;
+
+  }
+
+  #v-product>div>div {
+    gap: 7px;
+  }
+
+  #v-product>div p {
+    width: 100%;
+    max-height: 140px;
+    margin: 0;
+    overflow-y: auto;
+  }
+
+  #v-product img {
+    width: 100%;
+    height: 35%;
+  }
+
+  #testimonials .slider-item {
+    height: 100%;
+    width: 100%;
+    gap: 14px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  #testimonials .slider-item>div {
+    width: 100%;
+    flex: 0 0 auto;
+    gap: 7px;
+  }
+
+  #testimonials .slider-item .details {
+    padding: 14px 0px;
+  }
+
+  #testimonials .slider-item iframe {
+    width: 70%;
+    max-width: 100%;
+    height: auto;
+    border-radius: 2px;
+  }
+
+
+
+  #product1 .bi-arrows {
+    display: flex;
+    font-size: 28px;
+    animation: bounce-x 3s ease-in-out infinite;
+    color: var(--black-color);
+
+  }
+
+  #product1 .pro {
+    scroll-snap-align: center;
+  }
+
+  #product1 {
+    position: relative;
+  }
+
+  #product1 .pro-container {
+    justify-content: flex-start;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    gap: 21px;
+    width: 100%;
+    padding: 14px 50px;
+    scroll-snap-type: x mandatory;
+  }
+
+  #product1 div.arrows {
+    display: flex;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    z-index: 5;
+    padding: 0 35px;
+  }
+
+  #product1 div.arrows .bi {
+    color: rgba(0, 0, 0, 0.45);
+    font-size: 28px;
+  }
+
+
+  #path>div {
+    height: 360px;
+  }
+
+  #path {
+    position: relative;
+  }
+
+  #path>div>div {
+    flex-direction: column;
+    text-align: center;
+    gap: 7px;
+  }
+
+  #path>div>div>div {
+    width: 100%;
+  }
+
+  #path .modal img {
+    width: auto;
+    max-width: 90%;
+    height: auto;
+    max-height: 90%;
+  }
+
+  #path div.arrows {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    left: 50%;
+    top: 56%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    z-index: 5;
+    padding: 0 7px;
+  }
+
+  #path div.arrows .bi,
+  #path .bi-arrow-down-circle-fill {
+    color: rgba(0, 0, 0, 0.45);
+    font-size: 28px;
+  }
+
+  #path .bi-arrow-down-circle-fill {
+    display: flex;
+    position: relative;
+    top: -9px;
+  }
+
+}

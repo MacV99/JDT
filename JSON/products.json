@@ -1,0 +1,65 @@
+[
+    {
+        "id": 1,
+        "name":"CALIBRADOR DE PRECISIÓN",
+        "price": 58.500,
+        "details": "Herramienta diseñada específicamente para medir globos con exactitud, asegurando resultados impecables en decoraciones. Su diseño robusto y portátil la hace ideal para decoradores profesionales que buscan precisión y calidad en su trabajo.",
+        "image": "./IMG/products/calibrador-pink.png"
+    },
+    {
+        "id": 2,
+        "name":"BOLIBASE (X2 UNIDADES)",
+        "price": 72.500 ,
+        "details": "Base multifuncional diseñada para ofrecer estabilidad y soporte a decoraciones con globos y estructuras de diferentes tamaños. Su diseño liviano, apilable y adaptable garantiza facilidad de uso y versatilidad en eventos de cualquier tipo.",
+        "image": "./IMG/products/base-white.png"
+    },
+    {
+        "id": 3,
+        "name":"PEGAFLUX ULTRA",
+        "price": 36.600,
+        "details": "Innovador pegamento en aerosol diseñado específicamente para unir globos foil de manera firme y efectiva. Presentación plateada y envase de aluminio.",
+        "image": "./IMG/products/pega-ultra.png"
+    },
+    {
+        "id": 4,
+        "name":"BRILLAFLUX",
+        "price": 19.600,
+        "details": "Aerosol que da brillo natural a los globos, mejorando su apariencia y destacando la calidad de las decoraciones.",
+        "image": "./IMG/products/brilla-flux.png"
+    },
+    {
+        "id": 5,
+        "name":"PEGAFLUX",
+        "price": 18.400,
+        "details": "Pegamento para unir globos de látex de manera instantánea. Presentación en color azul con envase práctico.",
+        "image": "./IMG/products/pega-flux.png"
+    },
+    {
+        "id": 6,
+        "name":"BRILLAFLUX ULTRA",
+        "price": 29.600,
+        "details": "Spray en envase de aluminio color fucsia para dar un brillo intenso y un acabado elegante a los globos.",
+        "image": "./IMG/products/BRILLA FLUX ULTRA.png "
+    },
+    {
+        "id": 7,
+        "name":"BOLICÚTER",
+        "price": 7.100,
+        "details": "Herramienta para cortar cuellos de globos o excesos innecesarios, garantizando cortes limpios y precisos.",
+        "image": "./IMG/products/BOLICUTER ROSADO.png"
+    },
+    {
+        "id": 8,
+        "name":"DELANTAL DE BOLIGLOBOS",
+        "price": 58.000,
+        "details": "Diseñado para decoradores, ofrece comodidad y eficiencia al tener herramientas siempre a la mano.",
+        "image": "./IMG/products/delantal.png"
+    },
+    {
+        "id": 9,
+        "name":"YO-YO",
+        "price": 6.200,
+        "details": "Accesorio con gancho y cuerda retráctil para mantener tijeras accesibles durante el trabajo.",
+        "image": "./IMG/products/YOYO.png"
+    }
+]
