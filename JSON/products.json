@@ -1,65 +1,65 @@
 [
     {
         "id": 1,
-        "name":"CALIBRADOR DE PRECISIÓN",
-        "price": 58.500,
-        "details": "Herramienta diseñada específicamente para medir globos con exactitud, asegurando resultados impecables en decoraciones. Su diseño robusto y portátil la hace ideal para decoradores profesionales que buscan precisión y calidad en su trabajo.",
-        "image": "./IMG/products/calibrador-pink.png"
+        "name":"RESINA EPÓXICA",
+        "price": 0,
+        "details": "Por su Resistencia Transparencia Densidad y Rápido Secado es Especial para Recubrimientos de Superficies, Para Encapsulados, Bisuteria Fina y Manualidades Artísticas de Alta Duración",
+        "image": "./IMG/products/1 RESINA.jpg"
     },
     {
         "id": 2,
-        "name":"BOLIBASE (X2 UNIDADES)",
-        "price": 72.500 ,
-        "details": "Base multifuncional diseñada para ofrecer estabilidad y soporte a decoraciones con globos y estructuras de diferentes tamaños. Su diseño liviano, apilable y adaptable garantiza facilidad de uso y versatilidad en eventos de cualquier tipo.",
-        "image": "./IMG/products/base-white.png"
+        "name":"KIT DE PIGMENTOS",
+        "price": 0,
+        "details": "Producir los Distintos Efectos de Color en la Resina. Colorantes Minerales Especiales para Mezclas Densas. El Kit Contiene 16 Bolsas de 12 Grs  Promedio, de diferentes Colores entre Ácidos, Planos, Metalizados y Especiales, además de un Fotoretenedor",
+        "image": "./IMG/products/2 PIGMENTOS.jpg"
     },
     {
         "id": 3,
-        "name":"PEGAFLUX ULTRA",
-        "price": 36.600,
-        "details": "Innovador pegamento en aerosol diseñado específicamente para unir globos foil de manera firme y efectiva. Presentación plateada y envase de aluminio.",
-        "image": "./IMG/products/pega-ultra.png"
+        "name":"MEMORIA",
+        "price": 0,
+        "details": "Archivos de Capacitación Portátil y Banco de 2000 Imágenes 4K y 8K. Contiene 16 Carpetas con Fotografías en 16 Temáticas (Animales, Comidas, Deportes, Flores y Infantil Paisajes, Religiosas, Personajes, SuperHeroes, Tecnología, Universo Espacial, Motos, Autos, Urbanas, 3D, 4MG, Otras) También Contiene Archivos 4 Máster Class Sobre Pisos y Otras Superficies, Mesas Encapsuladas, Bisutería y Modelarte en Resina. Además 4 Videos Tutoriales sobre los Mismos Temas y 22 Archivos entre Videos y  con Ideas de Diseños en Resina.",
+        "image": "./IMG/products/3 MEMORIA.jpg"
     },
     {
         "id": 4,
-        "name":"BRILLAFLUX",
-        "price": 19.600,
-        "details": "Aerosol que da brillo natural a los globos, mejorando su apariencia y destacando la calidad de las decoraciones.",
-        "image": "./IMG/products/brilla-flux.png"
+        "name":"MEZCLADOR MECÁNICO",
+        "price": 0,
+        "details": "Herramienta Especializada para Homogenizar Mezclas Densas; esta acción garantiza que los componentes se unan en debida forma. Se le Instala al Taladro en el sitio donde normalmente va la broca. Por sus Aspas Cruzadas Cumple perfecta-mente su función sin producir Burbujas en Exceso. Calidad 100% Metálico. Altamente Durable y Resistente. Su Limpieza o lavado puede hacerse con Alcohol Industrial y/o con Thiner",
+        "image": "./IMG/products/4MEZCLADOR MECANICO.jpg"
     },
     {
         "id": 5,
-        "name":"PEGAFLUX",
-        "price": 18.400,
-        "details": "Pegamento para unir globos de látex de manera instantánea. Presentación en color azul con envase práctico.",
-        "image": "./IMG/products/pega-flux.png"
+        "name":"KIT ESPÁTULAS",
+        "price": 0,
+        "details": "Esparcir la Resina en Superficies Reducidas. Las Dentadas Esparcen y Perfilan el Grosor de la Capa. Dentadura 2 Mms Su Diseño Anatómico permite un manejo Eficiente y Descansado. Regleta de Aluminio 50 Cm Largo, Calibre 2 Mm. Lavar con Alcohol Industrial o Enjuagar con Thiner solo las Partes de Metal",
+        "image": "./IMG/products/5 KIT ESPATULAS.jpg"
     },
     {
         "id": 6,
-        "name":"BRILLAFLUX ULTRA",
-        "price": 29.600,
-        "details": "Spray en envase de aluminio color fucsia para dar un brillo intenso y un acabado elegante a los globos.",
-        "image": "./IMG/products/BRILLA FLUX ULTRA.png "
+        "name":"HARAGÁN DENTADO",
+        "price": 0,
+        "details": "Esparcir Uniformemente Perfilando el Grosor de la Capa de Resina (Grandes y Pequeñas Superficies. Manubrio Telescópico Alargable, Mango de Espuma Ergonómica, Más de 1000 Usos. Regleta de Aluminio 50 Cm Largo, Calibre 2 Mm Dentadura 2 Mms. Lavar con Alcohol Industrial o Enjuagar con Thiner solo las Partes de Metal",
+        "image": "./IMG/products/6 ARAGÁN DENTADO.jpg"
     },
     {
         "id": 7,
-        "name":"BOLICÚTER",
-        "price": 7.100,
-        "details": "Herramienta para cortar cuellos de globos o excesos innecesarios, garantizando cortes limpios y precisos.",
-        "image": "./IMG/products/BOLICUTER ROSADO.png"
+        "name":"RODILLO DE PICOS",
+        "price": 0,
+        "details": "Romper Burbujas en Superficie. Ergonomía, Más de 1000 Usos. Estructura Metálica Mango y Picos de Polipropileno. Lavar con Alcohol Industrial o Enjuagar con Thiner",
+        "image": "./IMG/products/7 RODILLO DE PICOS.jpg"
     },
     {
         "id": 8,
-        "name":"DELANTAL DE BOLIGLOBOS",
-        "price": 58.000,
-        "details": "Diseñado para decoradores, ofrece comodidad y eficiencia al tener herramientas siempre a la mano.",
-        "image": "./IMG/products/delantal.png"
+        "name":"ZAPATILLAS EPOXICAS",
+        "price": 0,
+        "details": "Para Caminar y Trabajar Sobre las Capas de Resina sin dañarlas cuando éstas no han secado. Son Multitalla, se acomodan a casi todos los tamaños de zapatos. 100% Lavables. Fácil Armado. Puntillas de Acero Zuelas de y Correas de Riata Fina.. Su Limpieza o lavado puede hacerse con Alcohol Industrial y/o con Thiner",
+        "image": "./IMG/products/8 ZAPATILLAS EPOXICAS DE PUAS.jpg"
     },
     {
         "id": 9,
-        "name":"YO-YO",
-        "price": 6.200,
-        "details": "Accesorio con gancho y cuerda retráctil para mantener tijeras accesibles durante el trabajo.",
-        "image": "./IMG/products/YOYO.png"
+        "name":"KIT PROFESIONAL",
+        "price": 0,
+        "details": "Kit Herramientas Especializadas y Materiales Esenciales. Puede Contener Mezclador, Kit Espátulas Zapatos Epóxicos, Haragán Dentado, Rodillo de Picos Memorias 1 y 2, Kit de Pigmentos, 3 Kilos de RESINA RETPAR Libro Físico y Portalijas PUEDE SOLICITARLO COMO MEJOR LO DESEE",
+        "image": "./IMG/products/10 KIT PROFESIONAL.jpg"
     }
 ]

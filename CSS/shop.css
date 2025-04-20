@@ -50,11 +50,13 @@
   padding: 21px 14px;
   box-shadow: 0 0 14px rgba(0, 0, 0, 0.35);
   border-radius: 2px;
+  gap: 7px;
 }
 
 .listProduct .item img {
   height: 140px;
-  padding: 14px;
+  border-radius: 2px;
+  border: solid 1px #00000021;
 }
 
 .listProduct .item .product-name {
@@ -69,7 +71,7 @@
 }
 
 .listProduct .item button {
-  background-color: #009600;
+  background-color: #005592;
   color: #eee;
   border: none;
   padding: 7px 21px;
@@ -216,8 +218,8 @@ body.showCart .container {
   border-radius: 2px;
   width: 28px;
   right: 7px;
-  border: 2px solid #009600;
-  color: #009600;
+  border: 2px solid #005592;
+  color: #005592;
   cursor: pointer;
   padding: 0;
 }
