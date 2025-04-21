@@ -406,11 +406,13 @@ div.arrows {
   max-width: 700px;
   justify-content: flex-start;
   box-shadow: 0 0 14px rgba(0, 0, 0, 0.35);
+  gap: 7px;
 
 }
 
 #nosotros div h3 {
   align-self: baseline;
+  font-size: 21px;
 }
 
 
