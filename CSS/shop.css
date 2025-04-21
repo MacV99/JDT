@@ -238,6 +238,34 @@ body.showCart .container {
 }
 
 
+/* Puedes incluir esto en tu CSS */
+.icon-cart.highlight-cart {
+  animation: shake 0.4s;
+}
+
+@keyframes shake {
+  0% {
+    transform: scale(1);
+  }
+
+  25% {
+    transform: scale(1.2);
+  }
+
+  50% {
+    transform: scale(0.95);
+  }
+
+  75% {
+    transform: scale(1.05);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+
 @media (max-width: 799px) {
   .listProduct {
     width: 100%;

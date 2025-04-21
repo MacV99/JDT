@@ -125,24 +125,59 @@ function showProductDetails(productId) {
 
   if (product) {
     const $vProduct = document.getElementById('v-product'); // Contenedor de la vista del producto
+    const $image = $vProduct.querySelector('img');
+    const $name = $vProduct.querySelector('.product-name');
+    const $desc = $vProduct.querySelector('p');
+    const $addToCartDetail = document.getElementById('add-to-cart-detail');
 
     // Actualizar contenido con los detalles del producto
-    $vProduct.querySelector('img').src = `.${product.image}`;
-    $vProduct.querySelector('.product-name').textContent = product.name;
-    $vProduct.querySelector('p').textContent = product.details;
+    $image.src = `.${product.image}`;
+    $name.textContent = product.name;
+    $desc.textContent = product.details;
 
     // Mostrar la vista del producto
     $vProduct.style.display = 'flex';
 
-    // Agregar evento para cerrar la vista
-    const closeBtn = document.getElementById('close-pro');
-    closeBtn.onclick = () => {
+    // Cerrar la vista
+    document.getElementById('close-pro').onclick = () => {
       $vProduct.style.display = 'none';
+    };
+
+    // Evento para agregar al carrito desde la vista de detalles
+    $addToCartDetail.onclick = () => {
+      addToCart(product.id);
+      iconCart.classList.add('highlight-cart');
+      setTimeout(() => iconCart.classList.remove('highlight-cart'), 1000);
+    };
+
+    // Evento para ampliar imagen al hacer clic
+    $image.onclick = () => {
+      const $modal = document.getElementById('image-modal');
+      const $modalImg = document.getElementById('modal-image');
+      $modalImg.src = $image.src;
+      $modal.style.display = 'flex';
     };
   } else {
     console.error("Producto no encontrado");
   }
 }
+
+
+// Cerrar modal al hacer clic fuera de la imagen
+document.getElementById('image-modal').addEventListener('click', (e) => {
+  if (e.target.id === 'image-modal') {
+    e.currentTarget.style.display = 'none';
+  }
+});
+
+// Cerrar modal con tecla Escape
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'Escape') {
+    document.getElementById('image-modal').style.display = 'none';
+  }
+});
+
+
 
 // Evento de delegación para añadir productos al carrito
 listProductHTML.addEventListener('click', (event) => {
@@ -150,8 +185,13 @@ listProductHTML.addEventListener('click', (event) => {
   if (positionClick.classList.contains('addCart')) {
     let product_id = positionClick.closest('.item').dataset.id;
     addToCart(product_id);
+
+    // Activar animación del carrito
+    iconCart.classList.add('highlight-cart');
+    setTimeout(() => iconCart.classList.remove('highlight-cart'), 1000);
   }
-})
+});
+
 
 /**
  * Añade un producto al carrito
