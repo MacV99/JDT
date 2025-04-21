@@ -19,13 +19,13 @@
 
 .icon-cart .bi-cart {
   font-size: 28px;
-  color: #222;
+  color: #005592;
 }
 
 .icon-cart span {
   position: absolute;
   color: white;
-  background-color: #222;
+  background-color: #005592;
   width: 18px;
   height: 18px;
   border-radius: 50%;
