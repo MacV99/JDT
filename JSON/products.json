@@ -1,7 +1,7 @@
 [
     {
         "id": 1,
-        "name":"RESINA EPÓXICA 1K",
+        "name":"RESINA EPÓXICA RETPAR 1K",
         "price": 0,
         "details": "FUNCIÓN: Por su Resistencia Transparencia Densidad y Rápido Secado es Especial para Recubrimientos de Superficies, Para Encapsulados, Bisuteria Fina y  Manualidades Artísticas de Alta Duración. Cualidades: Tráfico Pesado y Alta Resistencia Densidad 1,113 y rinde a razón de 1 Kilo x Mt2 y 1 Litro de Cápsula por 1100 Gramos de peso. Calidad: Hecha de Epiclorhidrina y Bisfenol Calificación de Transparencia y Resistencias sobre 85%  Cuidados: El lavado de Residuos se puede hacer  con Alcohol Industrial y/o con Thiner",
         "image": "./IMG/products/RESINA 1K.jpg"
@@ -64,14 +64,14 @@
     },
     {
         "id": 10,
-        "name":"RESINA EPÓXICA 3K",
+        "name":"RESINA EPÓXICA RETPAR 3K",
         "price": 0,
         "details": "Por su Resistencia Transparencia Densidad y Rápido Secado es Especial para Recubrimientos de Superficies, Para Encapsulados, Bisuteria Fina y  Manualidades Artísticas de Alta Duración. Cualidades: Tráfico Pesado y Alta Resistencia Densidad 1,113 y rinde a razón de 1 Kilo x Mt2 y 1 Litro de Cápsula por 1100 Gramos de peso. Calidad: Hecha de Epiclorhidrina y Bisfenol Calificación de Transparencia y Resistencias sobre 85%  Cuidados: El lavado de Residuos se puede hacer  con Alcohol Industrial y/o con Thiner",
         "image": "./IMG/products/RESINA 3K.jpg"
     },
     {
         "id": 11,
-        "name":"RESINA EPÓXICA 30K",
+        "name":"RESINA EPÓXICA RETPAR  30K",
         "price": 0,
         "details": "Por su Resistencia Transparencia Densidad y Rápido Secado es Especial para Recubrimientos de Superficies, Para Encapsulados, Bisuteria Fina y  Manualidades Artísticas de Alta Duración. Cualidades: Tráfico Pesado y Alta Resistencia Densidad 1,113 y rinde a razón de 1 Kilo x Mt2 y 1 Litro de Cápsula por 1100 Gramos de peso. Calidad: Hecha de Epiclorhidrina y Bisfenol Calificación de Transparencia y Resistencias sobre 85%  Cuidados: El lavado de Residuos se puede hacer  con Alcohol Industrial y/o con Thiner",
         "image": "./IMG/products/RESINA 30 K.jpg"
