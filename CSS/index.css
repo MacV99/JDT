@@ -120,8 +120,6 @@ div.arrows {
 }
 
 
-
-
 #close {
   display: none;
 }
@@ -142,6 +140,14 @@ div.arrows {
   color: white;
   animation: backShadow 150ms ease-in-out;
 }
+
+#v-product>div p {
+  width: 100%;
+  max-height: 210px;
+  margin: 0;
+  overflow-y: auto;
+}
+
 
 @keyframes backShadow {
   from {
@@ -415,13 +421,26 @@ div.arrows {
   background-attachment: fixed;
   background-color: rgba(255, 255, 255, 0.7);
   background-blend-mode: color;
-
-
 }
 
 #nosotros div h3 {
   align-self: baseline;
   font-size: 21px;
+}
+
+
+/* bienvenida */
+#bienvenida {
+  gap: 21px;
+  flex-wrap: wrap;
+}
+
+#bienvenida img {
+  width: 100%;
+  max-width: 450px;
+  height: auto;
+  background-color: #ebebeb;
+  border-radius: 3px;
 }
 
 
@@ -448,10 +467,7 @@ div.arrows {
   }
 
   #v-product>div p {
-    width: 100%;
     max-height: 140px;
-    margin: 0;
-    overflow-y: auto;
   }
 
   #v-product img {

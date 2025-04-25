@@ -301,7 +301,7 @@ footer .follow {
 
 footer .follow i {
   color: #000000;
-  padding-right: 4px;
+  padding-right: 14px;
   cursor: pointer;
   font-size: 35px;
 }
@@ -313,10 +313,7 @@ footer .col {
 }
 
 
-
 /* KEYRFAMES */
-
-
 @keyframes bounce-x-y {
   0% {
     transform: translateX(0) rotate(0deg);
