@@ -328,6 +328,7 @@ footer .col {
   gap: 14px;
   width: 100%;
   max-width: 500px;
+  margin: 45px 0
 }
 
 #info p {
