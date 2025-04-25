@@ -74,7 +74,7 @@
         "name":"RESINA EPÓXICA RETPAR  30K",
         "price": 0,
         "details": "Por su Resistencia Transparencia Densidad y Rápido Secado es Especial para Recubrimientos de Superficies, Para Encapsulados, Bisuteria Fina y  Manualidades Artísticas de Alta Duración. Cualidades: Tráfico Pesado y Alta Resistencia Densidad 1,113 y rinde a razón de 1 Kilo x Mt2 y 1 Litro de Cápsula por 1100 Gramos de peso. Calidad: Hecha de Epiclorhidrina y Bisfenol Calificación de Transparencia y Resistencias sobre 85%  Cuidados: El lavado de Residuos se puede hacer  con Alcohol Industrial y/o con Thiner",
-        "image": "./IMG/products/RESINA 30 K.jpg"
+        "image": "./IMG/products/RESINA 30K.jpg"
     },
     {
         "id": 12,
@@ -95,7 +95,6 @@
         "id": 14,
         "name":"LIBRO FÍSICO RETPAR",
         "price": 0,
-        "details": "LIBRO FÍSICO RETPAR",
-        "image": "./IMG/products/9 LIBRO FÍSICO RETPAR.jpg"
+        "details": "Ésta es una extraordinaria Obra de Maravillosa Presentación en Pasta Dura y más de 100 fotografías a Full Color, escrita por el experimentado Escritor colombiano Erre Triviño. Ella será su Consultor de Cabecera al momento de emprender sus Proyetos de Recubriiento en Superficies como de Encapsu-lado de Mesas o de Bisutería, así como de cualquier pieza Artística hecha con RETPAR (Resina Epoxi de Tráfico Pesado y Alta Resistencia).Contiene los Métodos, las Condiciones de Trabajo y las distintas Fórmulas de Preparación, Aplicación y Vaciado; también los Tips de Experto, algunas temáticas y Normas Técnicas relacionadas así como un inesperado Plan de Emprendimiento. Todo lo anterior dicho en letras de tamaño legibles y Lenguaje Simple del Aplicador que de verdad lo ha hecho.",        "image": "./IMG/products/9 LIBRO FÍSICO RETPAR.jpg"
     }
 ]
