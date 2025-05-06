@@ -101,6 +101,34 @@ p {
 }
 
 
+/* INFINITY SLIDER HERO*/
+#hero.carousel-container {
+  background-color: #ffffff;
+  position: relative;
+  padding: 0;
+  width: 100%;
+  overflow: hidden;
+  height: fit-content;
+}
+
+#hero .carousel-track {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+#hero .carousel-item {
+  flex: 0 0 100%;
+  width: 100%;
+  height: auto;
+}
+
+#hero .carousel-item img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+
 /* ENLACES */
 #enlaces {
   gap: 14px;

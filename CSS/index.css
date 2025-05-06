@@ -433,6 +433,7 @@ div.arrows {
 #bienvenida {
   gap: 21px;
   flex-wrap: wrap;
+  background-color: #ebebeb;
 }
 
 #bienvenida img {
