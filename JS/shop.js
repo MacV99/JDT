@@ -97,7 +97,7 @@ const addDataToHTML = () => {
       newProduct.innerHTML = `
                 <img src=".${cleanImagePath(product.image)}" alt="${product.name}">
                 <h5 class="product-name">${product.name}</h5>
-
+                <h5>$${product.price.toFixed(3)}</h5>
                 <div class="flex-row">
                     <button class="addCart">Agregar</button>
                     <i class="bi bi-info flex-row"></i>
@@ -269,7 +269,7 @@ const addCartToHTML = () => {
                     <div class="name">
                         ${info.name}
                     </div>
-
+                      <div class="totalPrice">$${itemTotal.toFixed(3)}</div>  
                     <div class="quantity flex-row">
                         <span><i class="bi bi-dash minus"></i></span>
                         <span>${item.quantity}</span>
@@ -287,7 +287,7 @@ const addCartToHTML = () => {
     let totalSection = document.createElement('div');
     totalSection.classList.add('cart-total');
     totalSection.innerHTML = `
-            <strong>✅</strong>
+            <strong>Total: $${totalPrice.toFixed(3)}</strong>
         `;
     listCartHTML.appendChild(totalSection);
   }
@@ -383,7 +383,7 @@ $btnBuy.addEventListener("click", () => {
 
   cart.forEach((item) => {
     // Usar el product_id como índice, no como valor de búsqueda
-    mensaje += `- ${products[item.product_id - 1].name} x ${item.quantity}}\n`;
+    mensaje += `- ${products[item.product_id - 1].name} - $${products[item.product_id - 1].price.toFixed(3)} x ${item.quantity} = ${(products[item.product_id - 1].price.toFixed(3) * item.quantity).toFixed(3)}\n`;
   });
   mensaje += `\n*${total}*`;
 

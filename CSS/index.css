@@ -33,7 +33,6 @@ button.white {
 
 
 #title-page {
-
   padding: 21px 10%;
   background-color: #e8edff;
   height: 350px;
@@ -47,7 +46,6 @@ button.white {
 #hero img {
   height: auto;
   width: 100%;
-  background-color: #ebebeb;
 }
 
 
@@ -433,14 +431,13 @@ div.arrows {
 #bienvenida {
   gap: 21px;
   flex-wrap: wrap;
-  background-color: #ebebeb;
+  background-color: #faf9ff;
 }
 
 #bienvenida img {
   width: 100%;
-  max-width: 450px;
+  max-width: 550px;
   height: auto;
-  background-color: #ebebeb;
   border-radius: 3px;
 }
 
@@ -450,7 +447,6 @@ div.arrows {
 
   #hero {
     height: auto;
-
   }
 
   #v-product>div {

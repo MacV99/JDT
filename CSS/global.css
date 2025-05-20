@@ -29,8 +29,9 @@ a {
 
 /* Global Styles */
 
-button {
-  border-radius: 2px;
+button,
+.a_button {
+  border-radius: 4px;
   padding: 14px 21px;
   color: white;
   font-weight: bold;
@@ -38,6 +39,7 @@ button {
   cursor: pointer;
   background-color: #005592;
   margin-right: 14px;
+  text-align: center;
 }
 
 h1 {
@@ -132,7 +134,7 @@ p {
 /* ENLACES */
 #enlaces {
   gap: 14px;
-  background-color: rgb(241, 241, 241);
+  background-color: #faf9ff;
 }
 
 
@@ -145,7 +147,7 @@ header {
   backdrop-filter: blur(7px);
   box-shadow: 0 0 14px rgba(0, 0, 0, 0.35);
   height: 100px;
-  z-index: 10;
+  z-index: 100;
   position: sticky;
   top: 0;
   width: 100%;
@@ -208,8 +210,7 @@ nav li a:hover::after {
 
 section,
 footer {
-  padding: 45px 10%;
-
+  padding: 35px 10%;
 }
 
 .flex-column,
@@ -264,7 +265,7 @@ footer {
 .feature .fe-box {
   text-align: center;
   padding: 7px;
-  border-radius: 2px;
+  border-radius: 4px;
   background-color: #00000007;
   backdrop-filter: blur(7px);
 }
@@ -295,11 +296,17 @@ footer {
   flex-wrap: wrap;
   justify-content: center;
   align-items: flex-start;
-  background-color: #dbdbdb;
   gap: 35px;
   margin-top: auto;
   width: 100%;
   max-width: none;
+  background-image: url(../IMG/pereira.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  background-color: rgba(255, 255, 255, 0.86);
+  background-blend-mode: color;
 }
 
 footer img {
@@ -362,7 +369,10 @@ footer .col {
 #info p {
   font-size: 21px;
   text-align: center;
+}
 
+.a_button {
+  background-color: #f7db1f;
 }
 
 /* KEYRFAMES */

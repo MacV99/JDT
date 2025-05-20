@@ -45,22 +45,22 @@
 
 .listProduct .item {
   width: 230px;
-  height: 280px;
+  height: 300px;
   text-align: center;
   padding: 21px 14px;
   box-shadow: 0 0 14px rgba(0, 0, 0, 0.35);
-  border-radius: 2px;
-  gap: 7px;
+  border-radius: 4px;
 }
 
 .listProduct .item img {
   height: 140px;
-  border-radius: 2px;
+  border-radius: 4px;
   border: solid 1px #00000021;
+  margin-bottom: auto;
 }
 
 .listProduct .item .product-name {
-  font-size: 14px;
+  font-size: 13px;
   color: #222;
   margin: 7px 0;
 }
@@ -75,7 +75,7 @@
   color: #eee;
   border: none;
   padding: 7px 21px;
-  border-radius: 2px;
+  border-radius: 4px;
   cursor: pointer;
 }
 
@@ -163,7 +163,7 @@ body.showCart .container {
 }
 
 .listCart .quantity {
-  border-radius: 2px;
+  border-radius: 4px;
   border: solid 2px rgb(216, 216, 216);
   width: 22%;
   justify-content: space-between;
@@ -172,7 +172,7 @@ body.showCart .container {
 .listCart .quantity span {
   width: 25px;
   height: 25px;
-  border-radius: 2px;
+  border-radius: 4px;
   color: #222;
   cursor: pointer;
   font-size: 14px;
@@ -215,7 +215,7 @@ body.showCart .container {
 .listProduct .item .flex-row i {
   position: absolute;
   height: 100%;
-  border-radius: 2px;
+  border-radius: 4px;
   width: 28px;
   right: 7px;
   border: 2px solid #005592;

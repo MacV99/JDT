@@ -1,100 +1,100 @@
 [
     {
         "id": 1,
-        "name":"RESINA EPÓXICA RETPAR 1K",
-        "price": 0,
+        "name": "RESINA EPÓXICA RETPAR 1K",
+        "price": 170.000,
         "details": "FUNCIÓN: Por su Resistencia Transparencia Densidad y Rápido Secado es Especial para Recubrimientos de Superficies, Para Encapsulados, Bisuteria Fina y  Manualidades Artísticas de Alta Duración. Cualidades: Tráfico Pesado y Alta Resistencia Densidad 1,113 y rinde a razón de 1 Kilo x Mt2 y 1 Litro de Cápsula por 1100 Gramos de peso. Calidad: Hecha de Epiclorhidrina y Bisfenol Calificación de Transparencia y Resistencias sobre 85%  Cuidados: El lavado de Residuos se puede hacer  con Alcohol Industrial y/o con Thiner",
         "image": "./IMG/products/RESINA 1K.jpg"
     },
     {
         "id": 2,
-        "name":"KIT DE PIGMENTOS",
-        "price": 0,
+        "name": "KIT DE PIGMENTOS",
+        "price": 290.000,
         "details": "FUNCIÓN: Producir los Distintos Efectos de Color en la Resina. Colorantes Minerales Especiales para Mezclas Densas. El Kit Contiene 16 Bolsas de 12 Grs  Promedio, de diferentes Colores entre Ácidos, Planos, Metalizados y Especiales, además de un Fotoretenedor",
         "image": "./IMG/products/2 PIGMENTOS.jpg"
     },
     {
         "id": 3,
-        "name":"MEMORIA",
+        "name": "MEMORIA",
         "price": 0,
         "details": "FUNCIÓN: Archivos de Capacitación Portátil y Banco de 2000 Imágenes 4K y 8K. Contiene 16 Carpetas con Fotografías en 16 Temáticas (Animales, Comidas, Deportes, Flores y Infantil Paisajes, Religiosas, Personajes, SuperHeroes, Tecnología, Universo Espacial, Motos, Autos, Urbanas, 3D, 4MG, Otras) También Contiene Archivos 4 Máster Class Sobre Pisos y Otras Superficies, Mesas Encapsuladas, Bisutería y Modelarte en Resina. Además 4 Videos Tutoriales sobre los Mismos Temas y 22 Archivos entre Videos y  con Ideas de Diseños en Resina.",
         "image": "./IMG/products/3 MEMORIA.jpg"
     },
     {
         "id": 4,
-        "name":"MEZCLADOR MECÁNICO",
-        "price": 0,
+        "name": "MEZCLADOR MECÁNICO",
+        "price": 85.000,
         "details": "FUNCIÓN: Herramienta Especializada para Homogenizar Mezclas Densas; esta acción garantiza que los componentes se unan en debida forma. Se le Instala al Taladro en el sitio donde normalmente va la broca. Por sus Aspas Cruzadas Cumple perfecta-mente su función sin producir Burbujas en Exceso. Calidad 100% Metálico. Altamente Durable y Resistente. Su Limpieza o lavado puede hacerse con Alcohol Industrial y/o con Thiner",
         "image": "./IMG/products/4MEZCLADOR MECANICO.jpg"
     },
     {
         "id": 5,
-        "name":"KIT DE ESPÁTULAS",
-        "price": 0,
+        "name": "KIT DE ESPÁTULAS",
+        "price": 85.000,
         "details": "FUNCIÓN: Esparcir la Resina en Superficies Reducidas. CUALIDADES: Las Dentadas Esparcen y Perfilan el Grosor de la Capa. Dentadura 2 Mms Su Diseño Anatómico permite un manejo Eficiente y Descansado. CALIDAD: Acrílico flexible y Denso de Larga Duración Calibre 2 Mm",
         "image": "./IMG/products/5 KIT ESPATULAS.jpg"
     },
     {
         "id": 6,
-        "name":"HARAGÁN DENTADO",
+        "name": "HARAGÁN DENTADO",
         "price": 0,
         "details": "FUNCIÓN: Esparcir Uniformemente Perfilando el Grosor de la Capa de Resina (Grandes y Pequeñas Superficies. Manubrio Telescópico Alargable, Mango de Espuma Ergonómica, Más de 1000 Usos. Regleta de Aluminio 50 Cm Largo, Calibre 2 Mm Dentadura 2 Mms. Lavar con Alcohol Industrial o Enjuagar con Thiner solo las Partes de Metal",
         "image": "./IMG/products/6 ARAGÁN DENTADO.jpg"
     },
     {
         "id": 7,
-        "name":"RODILLO DE PICOS",
+        "name": "RODILLO DE PICOS",
         "price": 0,
         "details": "FUNCIÓN: Romper Burbujas en Superficie. Ergonomía, Más de 1000 Usos. Estructura Metálica Mango y Picos de Polipropileno. Lavar con Alcohol Industrial o Enjuagar con Thiner",
         "image": "./IMG/products/7 RODILLO DE PICOS.jpg"
     },
     {
         "id": 8,
-        "name":"ZAPATILLAS EPOXICAS",
+        "name": "ZAPATILLAS EPOXICAS",
         "price": 0,
         "details": "FUNCIÓN: Para Caminar y Trabajar Sobre las Capas de Resina sin dañarlas cuando éstas no han secado. Son Multitalla, se acomodan a casi todos los tamaños de zapatos. 100% Lavables. Fácil Armado. Puntillas de Acero Zuelas de y Correas de Riata Fina.. Su Limpieza o lavado puede hacerse con Alcohol Industrial y/o con Thiner",
         "image": "./IMG/products/8 ZAPATILLAS EPOXICAS DE PUAS.jpg"
     },
     {
         "id": 9,
-        "name":"KIT PROFESIONAL",
+        "name": "KIT PROFESIONAL",
         "price": 0,
         "details": "Kit Herramientas Especializadas y Materiales Esenciales. Puede Contener Mezclador, Kit Espátulas Zapatos Epóxicos, Haragán Dentado, Rodillo de Picos Memorias 1 y 2, Kit de Pigmentos, 3 Kilos de RESINA RETPAR Libro Físico y Portalijas PUEDE SOLICITARLO COMO MEJOR LO DESEE",
         "image": "./IMG/products/10 KIT PROFESIONAL.jpg"
     },
     {
         "id": 10,
-        "name":"RESINA EPÓXICA RETPAR 3K",
+        "name": "RESINA EPÓXICA RETPAR 3K",
         "price": 0,
         "details": "Por su Resistencia Transparencia Densidad y Rápido Secado es Especial para Recubrimientos de Superficies, Para Encapsulados, Bisuteria Fina y  Manualidades Artísticas de Alta Duración. Cualidades: Tráfico Pesado y Alta Resistencia Densidad 1,113 y rinde a razón de 1 Kilo x Mt2 y 1 Litro de Cápsula por 1100 Gramos de peso. Calidad: Hecha de Epiclorhidrina y Bisfenol Calificación de Transparencia y Resistencias sobre 85%  Cuidados: El lavado de Residuos se puede hacer  con Alcohol Industrial y/o con Thiner",
         "image": "./IMG/products/RESINA 3K.jpg"
     },
     {
         "id": 11,
-        "name":"RESINA EPÓXICA RETPAR  30K",
+        "name": "RESINA EPÓXICA RETPAR  30K",
         "price": 0,
         "details": "Por su Resistencia Transparencia Densidad y Rápido Secado es Especial para Recubrimientos de Superficies, Para Encapsulados, Bisuteria Fina y  Manualidades Artísticas de Alta Duración. Cualidades: Tráfico Pesado y Alta Resistencia Densidad 1,113 y rinde a razón de 1 Kilo x Mt2 y 1 Litro de Cápsula por 1100 Gramos de peso. Calidad: Hecha de Epiclorhidrina y Bisfenol Calificación de Transparencia y Resistencias sobre 85%  Cuidados: El lavado de Residuos se puede hacer  con Alcohol Industrial y/o con Thiner",
         "image": "./IMG/products/RESINA 30K.jpg"
     },
     {
         "id": 12,
-        "name":"BANCO DE IMÁGENES",
+        "name": "BANCO DE IMÁGENES",
         "price": 0,
         "details": "Archivos con Banco de 3750 Imágenes 4K y 8K Cualidades: Contiene 16 Carpetas con Fotografías en 16 Temáticas (Animales, Comidas, Deportes, Flores y lantas, Infantil, Paisajes, Religiosas, Personajes, Super-Héroes, Tecnología, Universo Espacial, Motos, Autos, Urbanas, 3D, 4MG, Otras) Cada Foto le puede  epresentar una Ideas Diferente de Diseño para sus Trabajos en Resina.",
         "image": "./IMG/products/BANCO DE IMÁGENES.jpg"
     },
     {
         "id": 13,
-        "name":"LIBRO JDT DIGITAL PDF BISUTERÍA CON RESINA EPOXI",
+        "name": "LIBRO JDT DIGITAL PDF BISUTERÍA CON RESINA EPOXI",
         "price": 0,
         "details": "Procedimiento Práctico y Metodológico para la Fabricación de Piezas de Joyería Hechas con RETPAR.",
         "image": "./IMG/products/LIBRO DIGITAL BISUTERÍA.jpg"
-    }
-    ,
+    },
     {
         "id": 14,
-        "name":"LIBRO FÍSICO RETPAR",
+        "name": "LIBRO FÍSICO RETPAR",
         "price": 0,
-        "details": "Ésta es una extraordinaria Obra de Maravillosa Presentación en Pasta Dura y más de 100 fotografías a Full Color, escrita por el experimentado Escritor colombiano Erre Triviño. Ella será su Consultor de Cabecera al momento de emprender sus Proyetos de Recubriiento en Superficies como de Encapsu-lado de Mesas o de Bisutería, así como de cualquier pieza Artística hecha con RETPAR (Resina Epoxi de Tráfico Pesado y Alta Resistencia).Contiene los Métodos, las Condiciones de Trabajo y las distintas Fórmulas de Preparación, Aplicación y Vaciado; también los Tips de Experto, algunas temáticas y Normas Técnicas relacionadas así como un inesperado Plan de Emprendimiento. Todo lo anterior dicho en letras de tamaño legibles y Lenguaje Simple del Aplicador que de verdad lo ha hecho.",        "image": "./IMG/products/9 LIBRO FÍSICO RETPAR.jpg"
+        "details": "Ésta es una extraordinaria Obra de Maravillosa Presentación en Pasta Dura y más de 100 fotografías a Full Color, escrita por el experimentado Escritor colombiano Erre Triviño. Ella será su Consultor de Cabecera al momento de emprender sus Proyetos de Recubriiento en Superficies como de Encapsu-lado de Mesas o de Bisutería, así como de cualquier pieza Artística hecha con RETPAR (Resina Epoxi de Tráfico Pesado y Alta Resistencia).Contiene los Métodos, las Condiciones de Trabajo y las distintas Fórmulas de Preparación, Aplicación y Vaciado; también los Tips de Experto, algunas temáticas y Normas Técnicas relacionadas así como un inesperado Plan de Emprendimiento. Todo lo anterior dicho en letras de tamaño legibles y Lenguaje Simple del Aplicador que de verdad lo ha hecho.",
+        "image": "./IMG/products/9 LIBRO FÍSICO RETPAR.jpg"
     }
 ]
