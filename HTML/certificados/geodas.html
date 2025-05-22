@@ -91,7 +91,7 @@
 
       // Cargar imagen de fondo
       const fondo = new Image();
-      fondo.src = '../../IMG/plantillas-certificados/dry-wall.jpg'; // Ruta donde está tu imagen
+      fondo.src = '../../IMG/plantillas-certificados/geodas.jpg'; // Ruta donde está tu imagen
 
       fondo.onload = function () {
         // Dibujar fondo
@@ -108,8 +108,8 @@
         // Escribir la fecha (día y año)
         ctx.font = '28px Arial';
         ctx.textAlign = 'left';
-        ctx.fillText(dia, 448, 874);  // posición ajustada para el "día"
-        ctx.fillText(mes, 660, 874); // posición ajustada para el "año"
+        ctx.fillText(dia, 425, 885);  // posición ajustada para el "día"
+        ctx.fillText(mes, 645, 885); // posición ajustada para el "año"
 
         // Crear la imagen JPG y descargar
         const link = document.createElement('a');
