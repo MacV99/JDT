@@ -49,7 +49,8 @@
     <p>"Cada logro, grande o pequeño, merece ser celebrado. Gracias por confiar en nosotros para acompañarte en tu
       formación."</p>
 
-    <canvas id="certCanvas" width="1600" height="1131" style="display:none;"></canvas>
+    <canvas id="certCanvas" width="1607" height="1241" style="display:none;"></canvas>
+
   </section>
 
 
@@ -103,13 +104,13 @@
         ctx.textAlign = 'center';
 
         // Escribir el nombre
-        ctx.fillText(nombre, canvas.width / 2, 600);
+        ctx.fillText(nombre, canvas.width / 2, 655);
 
         // Escribir la fecha (día y año)
         ctx.font = '28px Arial';
         ctx.textAlign = 'left';
-        ctx.fillText(dia, 505, 874);  // posición ajustada para el "día"
-        ctx.fillText(mes, 718, 874); // posición ajustada para el "año"
+        ctx.fillText(dia, 510, 960);  // posición ajustada para el "día"
+        ctx.fillText(mes, 720, 960); // posición ajustada para el "año"
 
         // Crear la imagen JPG y descargar
         const link = document.createElement('a');
