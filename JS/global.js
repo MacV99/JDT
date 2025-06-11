@@ -1,3 +1,5 @@
+let $floatWhatsapp = document.querySelector('.float-whatsapp');
+
 // INFINITY SLIDER
 document.addEventListener('DOMContentLoaded', () => {
   const track = document.getElementById('carouselTrack');
@@ -35,4 +37,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Cambiar imagen cada 3 segundos
   setInterval(moveCarousel, 3000);
+});
+
+// CLICK EN FLOAT-WHATSAPP
+$floatWhatsapp.addEventListener('click', function () {
+  const urlWhatsApp = `https://wa.me/573125430356?text=Hola JDT`;
+  window.open(urlWhatsApp, "_blank");
 });
