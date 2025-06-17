@@ -30,8 +30,9 @@ fetch('../JSON/cursos.json')
 
       // Agregar evento a cada curso
       $divCurso.addEventListener('click', () => {
-        // $vCurso.querySelector('img').src = `${curso.image}`;
+        $vCurso.querySelector('img').src = `${curso.image}`;
         $vCurso.querySelector('.name').textContent = `${curso.name}`;
+        // $vCurso.querySelector('.description').textContent = `${curso.description}`;
         $vCurso.style.display = 'flex';
       });
 
@@ -47,7 +48,7 @@ $comprarCurso.addEventListener('click', () => {
   let $nameCurso = document.getElementsByClassName('name')[0].textContent;
 
   const mensaje = `Hola, quiero adquirir el curso: ${$nameCurso} 📚`;
-  const numeroTelefono = "573184215899"; // Número de WhatsApp en formato internacional sin espacios ni signos
+  const numeroTelefono = "573125430356"; // Número de WhatsApp en formato internacional sin espacios ni signos
 
   const enlaceWhatsApp = `https://api.whatsapp.com/send?phone=${numeroTelefono}&text=${encodeURIComponent(mensaje)}`;
 

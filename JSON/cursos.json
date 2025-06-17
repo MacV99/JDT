@@ -2,6 +2,21 @@
     {
         "name": "MASTER EN LED",
         "description": "MASTER EN LED",
-        "image": "../IMG/cursos/MINIATURA ABC.jpg"
+        "image": "../IMG/cursos/led.jpg"
+    },
+    {
+        "name": "MESAS ENCAPSULADAS",
+        "description": "MESAS ENCAPSULADAS",
+        "image": "../IMG/cursos/mesas.jpg"
+    },
+    {
+        "name": "DRYWALL GYPSUM CHIROK Y PVC",
+        "description": "DRYWALL GYPSUM CHIROKY PVC",
+        "image": "../IMG/cursos/drywall.jpg"
+    },
+    {
+        "name": "RECUBRIMIENTO DE SUPERFICIES CON RESINA RETPAR",
+        "description": "RECUBRIMIENTO DE SUPERFICIES CON RESINA RETPAR",
+        "image": "../IMG/cursos/resina.jpg"
     }
 ]

@@ -21,14 +21,14 @@
       <nav>
         <li><a href="../../index.html">Nosotros</a></li>
         <li><a href="../shop.html">Tienda</a></li>
-        <li><a target="_blank" href="https://jdt.myclickfunnels.com/contacts/sign_in">Cursos</a></li>
+        <li><a href="../cursos.html">Cursos</i></a></li>
         <i id="close" class="bi bi-x-lg"></i>
       </nav>
     </div>
     <div id="mobile">
       <li><a href="../../index.html">Inicio</a></li>
       <li><a href="../shop.html">Tienda</a></li>
-      <li><a target="_blank" href="https://jdt.myclickfunnels.com/contacts/sign_in">Cursos</a></li>
+      <li><a href="../cursos.html">Cursos</i></a></li>
     </div>
   </header>
 
@@ -36,13 +36,14 @@
   <section id="certificado" class="flex-column">
     <h2>¡Felicidades! Genera tu Certificado de Participación</h2>
     <p>Reconoce tu esfuerzo y celebra tu logro. Descarga tu certificado personalizado</p>
+    <select id="curso">
+      <option value="">Selecciona un curso</option>
+      <option value="dry-wall">Drywall</option>
+      <option value="resina">Resina</option>
+      <option value="diseñarte">Diseñarte</option>
+    </select>
     <div class="form-container">
-      <select id="curso">
-        <option value="">Selecciona un curso</option>
-        <option value="dry-wall">Drywall</option>
-        <option value="resina">Resina</option>
-        <option value="geodas">Geodas</option>
-      </select>
+
       <br>
       <input type="text" id="cedula" placeholder="Ingresa tu cédula" />
       <br />
@@ -77,6 +78,7 @@
     const cursos = {
       "dry-wall": { gid: "0", plantilla: "dry-wall.jpg", yNombre: 660, xDia: 448, xMes: 660 },
       "resina": { gid: "1610891934", plantilla: "resina.jpg", yNombre: 650, xDia: 425, xMes: 645 },
+      "diseñarte": { gid: "122340120", plantilla: "diseñarte.jpg", yNombre: 650, xDia: 425, xMes: 645 },
     };
 
     async function buscarNombre(cedula, gid) {
@@ -133,7 +135,8 @@
         ctx.fillStyle = '#000000';
         ctx.font = 'bold 70px Arial';
         ctx.textAlign = 'center';
-        ctx.fillText(nombre, canvas.width / 2, config.yNombre);
+        ctx.fillText(nombre.toUpperCase(), canvas.width / 2, config.yNombre);
+
 
         ctx.font = '28px Arial';
         ctx.textAlign = 'left';
