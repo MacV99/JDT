@@ -1,0 +1,100 @@
+#cursos {
+  gap: 7px;
+}
+
+#cursos-container {
+  width: 100%;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+#cursos .curso {
+  border: solid 1px var(--grey-color);
+  width: 320px;
+  padding-bottom: 14px;
+  border-radius: 7px;
+  gap: 14px;
+  overflow: hidden;
+  text-align: center;
+}
+
+#cursos img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+
+/* VISTA CURSO COMPLETO */
+#v-curso {
+  display: none;
+  justify-content: start;
+  align-items: baseline;
+  position: fixed;
+  top: 100px;
+  left: 0;
+  width: 100%;
+  height: calc(100% - 100px);
+  background-color: white;
+  padding: 35px 7%;
+  gap: 14px;
+  z-index: 11;
+  overflow-x: auto;
+}
+
+#v-curso img {
+  width: 100%;
+  height: auto;
+  border-radius: 7px;
+}
+
+#v-curso .name {
+  padding: 0;
+}
+
+#v-curso #close-curso {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  width: 30px;
+  height: 30px;
+  background-color: white;
+  border: solid 1px var(--grey-color);
+  border-radius: 7px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#v-curso button {
+  border-radius: 7px;
+  padding: 14px 21px;
+  color: white;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  margin-right: 14px;
+}
+
+.plataformalink {
+  background-color: #005592;
+  padding: 14px;
+  color: white;
+  border-radius: 4px;
+  font-weight: 700;
+}
+
+@media (min-width: 799px) {
+  #v-curso {
+    width: 600px;
+    height: auto;
+    max-height: calc(100% - 200px);
+    border-radius: 14px;
+    box-shadow: 0 0 14px rgba(0, 0, 0, 0.35);
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 35px;
+  }
+
+}

@@ -38,7 +38,7 @@ button,
   border: none;
   cursor: pointer;
   background-color: #005592;
-  margin-right: 14px;
+  /* margin-right: 14px; */
   text-align: center;
 }
 

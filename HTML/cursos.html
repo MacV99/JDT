@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../CSS/global.css">
+  <link rel="stylesheet" href="../CSS/cursos.css">
+  <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="icon" type="image/x-icon" href="../IMG/logo.png">
+  <title>Cursos</title>
+</head>
+
+<body>
+  <header>
+    <a href="./cursos.html"><img src="../IMG/logo.png" class="logo" alt=""></a>
+    <div>
+      <nav>
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="../HTML/shop.html">Tienda</i></a></li>
+        <li><a href="./cursos.html">Cursos</i></a></li>
+        <!-- <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li> -->
+        <!-- <li><a href="cart.html"><i class="bi bi-bag"></i></a></li> -->
+        <i id="close" class="bi bi-x-lg"></i>
+      </nav>
+    </div>
+    <div id="mobile">
+      <!-- <a href="./HTML/shop.html"><i class="bi bi-bag"></i></a> -->
+      <li><a href="../index.html">Inicio</a></li>
+      <li><a href="../HTML/shop.html">Tienda</i></a></li>
+      <li><a href="./cursos.html">Cursos</i></a></li>
+      <!-- <i id="bar" class="bi bi-list"></i> -->
+    </div>
+
+  </header>
+
+
+  <!-- NUESTROS CURSOS -->
+  <section id="cursos" class="flex-column">
+    <h2>Explora nuestros cursos disponibles!</h2>
+    <p>Te dejamos aquí una lista con todos los cursos activos. Puedes conocer cada uno en detalle y hacer tu compra
+      directamente</p>
+    <div id="cursos-container" class="flex-row">
+
+      <!-- aca se cargan los cursos desde el js -->
+
+    </div>
+  </section>
+
+
+  <!-- ENLACES -->
+  <section id="enlaces" class="flex-column">
+    <h5>¿Ya tienes un curso?</h5>
+    <a href="https://jdt.myclickfunnels.com/contacts/sign_in?w_pw=true" class="button plataformalink" target="_blank">Ir
+      a la
+      plataforma 📚</a>
+    <h5>¿Tienes dudas o necesitas ayuda?</h5>
+    <button style="margin-right: 0px;"><a style="color: white;" href="https://api.whatsapp.com/send?phone=573125430356"
+        target="_blank" aria-label="whatsapp">+57 312
+        5430356 💬</a></button>
+  </section>
+
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="col">
+      <h4>Oficinas y Almacén</h4>
+      <p><strong>Dirección:</strong> Calle 83 #18-134 La Villa, Pereira, Risaralda, Colombia</p>
+      <p><strong>Teléfono:</strong>+57 312 5430356</p>
+      <div class="follow">
+        <h4>Síguenos</h4>
+        <a href="https://www.instagram.com/capacitacionesjdt/" target="_blank" aria-label="Instagram"><i
+            class="bi bi-instagram"></i></a>
+        <a href="https://api.whatsapp.com/send?phone=573125430356" target="_blank" aria-label="WhatsApp"><i
+            class="bi bi-whatsapp"></i></a>
+        <a href="https://www.facebook.com/JDTCapacitaciones/" target="_blank" aria-label="Facebook"><i
+            class="bi bi-facebook"></i></a>
+        <a href="https://www.tiktok.com/@jdtcapacitacionesepoxi?lang=es" target="_blank" aria-label="TikTok"><i
+            class="bi bi-tiktok"></i></a>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- ==VISTAS== -->
+  <!-- VISTA DEL CURSO -->
+  <div id="v-curso" class="flex-column">
+    <i id="close-curso" class="bi bi-x-lg"></i>
+    <img src="" alt="">
+    <h2 class="name">name</h2>
+    <!-- <p class="instructor">instructor</p> -->
+    <p class="description">description</p>
+    <div class="flex-row">
+      <button id="comprar-curso">ADQUIRIR</button>
+      <a href="https://jdt.myclickfunnels.com/contacts/sign_in?w_pw=true" target="_blank" class="button">VER</a>
+    </div>
+  </div>
+
+  <!-- WhatsApp flotante -->
+  <i class="bi bi-whatsapp flex-column float-whatsapp"></i>
+
+
+  <!-- SCRIPTS -->
+  <script src="../JS/global.js"></script>
+  <script src="../JS/cursos.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,152 @@
+<!-- Estructura HTML completa con select de cursos y generación dinámica del certificado -->
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../../CSS/global.css" />
+  <link rel="stylesheet" href="../../CSS/certificado.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+  <link rel="icon" type="image/x-icon" href="../../IMG/logo.png" />
+  <title>Certificado</title>
+</head>
+
+<body>
+  <header>
+    <a href="../../index.html"><img src="../../IMG/logo.png" class="logo" alt="logo" /></a>
+    <div>
+      <nav>
+        <li><a href="../../index.html">Nosotros</a></li>
+        <li><a href="../shop.html">Tienda</a></li>
+        <li><a target="_blank" href="https://jdt.myclickfunnels.com/contacts/sign_in">Cursos</a></li>
+        <i id="close" class="bi bi-x-lg"></i>
+      </nav>
+    </div>
+    <div id="mobile">
+      <li><a href="../../index.html">Inicio</a></li>
+      <li><a href="../shop.html">Tienda</a></li>
+      <li><a target="_blank" href="https://jdt.myclickfunnels.com/contacts/sign_in">Cursos</a></li>
+    </div>
+  </header>
+
+  <!-- CERTIFICADO -->
+  <section id="certificado" class="flex-column">
+    <h2>¡Felicidades! Genera tu Certificado de Participación</h2>
+    <p>Reconoce tu esfuerzo y celebra tu logro. Descarga tu certificado personalizado</p>
+    <div class="form-container">
+      <select id="curso">
+        <option value="">Selecciona un curso</option>
+        <option value="dry-wall">Drywall</option>
+        <option value="resina">Resina</option>
+        <option value="geodas">Geodas</option>
+      </select>
+      <br>
+      <input type="text" id="cedula" placeholder="Ingresa tu cédula" />
+      <br />
+      <button onclick="verificarYGenerar()">Descargar Certificado</button>
+    </div>
+    <p>"Cada logro, grande o pequeño, merece ser celebrado. Gracias por confiar en nosotros para acompañarte en tu
+      formación."</p>
+    <canvas id="certCanvas" width="1607" height="1241" style="display:none;"></canvas>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="col">
+      <h4>Oficinas y Almacén</h4>
+      <p><strong>Dirección:</strong> Calle 83 #18-134 La Villa, Pereira, Risaralda, Colombia</p>
+      <p><strong>Teléfono:</strong> +57 312 5430356</p>
+      <div class="follow">
+        <h4>Síguenos</h4>
+        <a href="https://www.instagram.com/capacitacionesjdt/" target="_blank" aria-label="Instagram"><i
+            class="bi bi-instagram"></i></a>
+        <a href="https://api.whatsapp.com/send?phone=573125430356" target="_blank" aria-label="WhatsApp"><i
+            class="bi bi-whatsapp"></i></a>
+        <a href="https://www.facebook.com/JDTCapacitaciones/" target="_blank" aria-label="Facebook"><i
+            class="bi bi-facebook"></i></a>
+        <a href="https://www.tiktok.com/@jdtcapacitacionesepoxi?lang=es" target="_blank" aria-label="TikTok"><i
+            class="bi bi-tiktok"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const cursos = {
+      "dry-wall": { gid: "0", plantilla: "dry-wall.jpg", yNombre: 660, xDia: 448, xMes: 660 },
+      "resina": { gid: "1610891934", plantilla: "resina.jpg", yNombre: 650, xDia: 425, xMes: 645 },
+    };
+
+    async function buscarNombre(cedula, gid) {
+      const url = `https://docs.google.com/spreadsheets/d/e/2PACX-1vTd4-mEpKJVADUdA5ve_jQ-cyzXIpb2CD6n-lk7AzVPwA_avixmYyFkPcUcWTbGot2OeqnGgDFhh6og/pubhtml?gid=${gid}&single=true`;
+      const res = await fetch(url);
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      const html = await res.text();
+      const doc = new DOMParser().parseFromString(html, 'text/html');
+
+      const rows = Array.from(doc.querySelectorAll('.waffle tbody tr'));
+      if (rows.length < 2) return null;
+
+      const headers = Array.from(rows[0].querySelectorAll('td')).map(td => td.textContent.trim().toLowerCase());
+      const idxCedula = headers.indexOf('cedula');
+      const idxNombre = headers.indexOf('nombre');
+      const dataRows = rows.slice(1);
+      cedula = cedula.trim().toLowerCase();
+
+      for (let row of dataRows) {
+        const cells = row.querySelectorAll('td');
+        const valorCedula = cells[idxCedula]?.textContent.trim().toLowerCase();
+        const nombre = cells[idxNombre]?.textContent.trim();
+        if (valorCedula === cedula) return nombre;
+      }
+      return null;
+    }
+
+    async function verificarYGenerar() {
+      const curso = document.getElementById('curso').value;
+      const cedula = document.getElementById('cedula').value;
+      if (!curso || !cedula) return alert('Selecciona un curso y escribe tu cédula.');
+
+      const config = cursos[curso];
+      const nombre = await buscarNombre(cedula, config.gid);
+      if (!nombre) return alert('❌ No se encontró la cédula en el curso seleccionado.');
+
+      generarCertificado(nombre, config);
+    }
+
+    function generarCertificado(nombre, config) {
+      const fecha = new Date();
+      const dia = fecha.getDate();
+      const mes = fecha.toLocaleString('default', { month: 'long' });
+
+      const canvas = document.getElementById('certCanvas');
+      const ctx = canvas.getContext('2d');
+
+      const fondo = new Image();
+      fondo.src = `../../IMG/plantillas-certificados/${config.plantilla}`;
+      fondo.onload = function () {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        ctx.drawImage(fondo, 0, 0, canvas.width, canvas.height);
+
+        ctx.fillStyle = '#000000';
+        ctx.font = 'bold 70px Arial';
+        ctx.textAlign = 'center';
+        ctx.fillText(nombre, canvas.width / 2, config.yNombre);
+
+        ctx.font = '28px Arial';
+        ctx.textAlign = 'left';
+        ctx.fillText(dia, config.xDia, 962);
+        ctx.fillText(mes, config.xMes, 962);
+
+        const link = document.createElement('a');
+        link.download = `certificado_${nombre}.jpg`;
+        link.href = canvas.toDataURL('image/jpeg', 1.0);
+        link.click();
+      };
+    }
+  </script>
+</body>
+
+</html>
