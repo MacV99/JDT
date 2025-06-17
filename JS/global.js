@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
         setTimeout(() => {
           track.style.transition = 'transform 0.5s ease';
         }, 50);
-      }, 500);
+      }, 500)
     }
   }
 
@@ -43,4 +43,12 @@ document.addEventListener('DOMContentLoaded', () => {
 $floatWhatsapp.addEventListener('click', function () {
   const urlWhatsApp = `https://wa.me/573125430356?text=Hola JDT`;
   window.open(urlWhatsApp, "_blank");
+});
+
+
+// CLICK EN BOTON DE MENU
+const $burguerNav = document.getElementById('bar');
+$burguerNav.addEventListener('click', function () {
+  const $navMobile = document.getElementById('mobile');
+  $navMobile.style.display = 'flex';
 });

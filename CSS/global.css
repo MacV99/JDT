@@ -4,7 +4,7 @@
   --red-color: #ff0000;
   --yellow-color: #ffdc00;
   --grey-color: #ccc;
-  --black-color: #000000;
+  --black-color: #111;
 }
 
 * {
@@ -147,7 +147,7 @@ header {
   backdrop-filter: blur(7px);
   box-shadow: 0 0 14px rgba(0, 0, 0, 0.35);
   height: 100px;
-  z-index: 100;
+  z-index: 1000;
   position: sticky;
   top: 0;
   width: 100%;
@@ -390,6 +390,10 @@ footer .col {
   box-shadow: 0 0 14px rgba(0, 0, 0, 0.35);
 }
 
+#bar {
+  display: none;
+}
+
 /* KEYRFAMES */
 @keyframes bounce-x-y {
   0% {
@@ -495,10 +499,17 @@ footer .col {
   }
 
   #mobile {
-    display: flex;
-    align-items: center;
-    gap: 14px;
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: calc(100vh - 100px);
+    top: 100px;
+    left: 0;
+    gap: 35px;
+    background-color: #fffffff1;
+    border-top: 1px solid var(--grey-color);
   }
+
 
   #mobile i {
     font-size: 21px;
@@ -523,6 +534,10 @@ footer .col {
   section,
   footer {
     padding: 45px 10%;
+  }
+
+  #bar {
+    display: flex;
   }
 
 
