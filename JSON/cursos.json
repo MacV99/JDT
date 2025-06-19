@@ -18,5 +18,10 @@
         "name": "RECUBRIMIENTO DE SUPERFICIES CON RESINA RETPAR",
         "description": "RECUBRIMIENTO DE SUPERFICIES CON RESINA RETPAR",
         "image": "../IMG/cursos/resina.jpg"
+    },
+    {
+        "name": "3750 IMÁGENES DE ALTA RESOLUCIÓN",
+        "description": "3750 IMÁGENES DE ALTA RESOLUCIÓN",
+        "image": "../IMG/cursos/imagenes.jpg"
     }
 ]
