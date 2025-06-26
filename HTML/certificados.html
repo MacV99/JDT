@@ -1,4 +1,3 @@
-<!-- Estructura HTML completa con select de cursos y generación dinámica del certificado -->
 <!DOCTYPE html>
 <html lang="es">
 
@@ -21,16 +20,16 @@
       <nav>
         <li><a href=".././index.html">Nosotros</a></li>
         <li><a href="./shop.html">Tienda</a></li>
-        <li><a href="./cursos.html">Cursos</i></a></li>
-        <li><a href="./certificados.html">Certificados</i></a></li>
+        <li><a href="./cursos.html">Cursos</a></li>
+        <li><a href="./certificados.html">Certificados</a></li>
         <i id="close" class="bi bi-x-lg"></i>
       </nav>
     </div>
     <div id="mobile" class="flex-column">
       <li><a href="../index.html">Inicio</a></li>
       <li><a href="./shop.html">Tienda</a></li>
-      <li><a href="./cursos.html">Cursos</i></a></li>
-      <li><a href="./certificados.html">Certificados</i></a></li>
+      <li><a href="./cursos.html">Cursos</a></li>
+      <li><a href="./certificados.html">Certificados</a></li>
     </div>
     <i id="bar" class="bi bi-list"></i>
   </header>
@@ -46,7 +45,6 @@
       <option value="diseñarte">Diseñarte</option>
     </select>
     <div class="form-container">
-
       <br>
       <input type="text" id="cedula" placeholder="Ingresa tu cédula" />
       <br />
@@ -65,13 +63,10 @@
       <p><strong>Teléfono:</strong> +57 312 5430356</p>
       <div class="follow">
         <h4>Síguenos</h4>
-        <a href="https://www.instagram.com/capacitacionesjdt/" target="_blank" aria-label="Instagram"><i
-            class="bi bi-instagram"></i></a>
-        <a href="https://api.whatsapp.com/send?phone=573125430356" target="_blank" aria-label="WhatsApp"><i
-            class="bi bi-whatsapp"></i></a>
-        <a href="https://www.facebook.com/JDTCapacitaciones/" target="_blank" aria-label="Facebook"><i
-            class="bi bi-facebook"></i></a>
-        <a href="https://www.tiktok.com/@jdtcapacitacionesepoxi?lang=es" target="_blank" aria-label="TikTok"><i
+        <a href="https://www.instagram.com/capacitacionesjdt/" target="_blank"><i class="bi bi-instagram"></i></a>
+        <a href="https://api.whatsapp.com/send?phone=573125430356" target="_blank"><i class="bi bi-whatsapp"></i></a>
+        <a href="https://www.facebook.com/JDTCapacitaciones/" target="_blank"><i class="bi bi-facebook"></i></a>
+        <a href="https://www.tiktok.com/@jdtcapacitacionesepoxi?lang=es" target="_blank"><i
             class="bi bi-tiktok"></i></a>
       </div>
     </div>
@@ -80,11 +75,38 @@
   <!-- WhatsApp flotante -->
   <i class="bi bi-whatsapp flex-column float-whatsapp"></i>
 
+  <!-- SCRIPT -->
   <script>
     const cursos = {
-      "dry-wall": { gid: "0", plantilla: "dry-wall.jpg", yNombre: 660, xDia: 448, xMes: 660 },
-      "resina": { gid: "1610891934", plantilla: "resina.jpg", yNombre: 650, xDia: 425, xMes: 645 },
-      "diseñarte": { gid: "122340120", plantilla: "diseñarte.jpg", yNombre: 650, xDia: 425, xMes: 645 },
+      "dry-wall": {
+        gid: "0",
+        plantilla: "dry-wall.jpg",
+        yNombre: 660,
+        xDia: 448,
+        yDia: 962,
+        xMes: 660,
+        yMes: 962
+      },
+      "resina": {
+        gid: "1610891934",
+        plantilla: "resina.jpg",
+        yNombre: 650,
+        xDia: 425,
+        yDia: 975,
+        xMes: 645,
+        yMes: 975,
+        adjuntos: ["../public/bonos/Capacitacion JDT CAPACITACIONES.pdf", "../public/bonos/Joyeria JDT Capacitaciones.pdf", "../public/bonos/Protectores de celulares personalizados JDT Capacitaciones.pdf"]
+      },
+      "diseñarte": {
+        gid: "122340120",
+        plantilla: "diseñarte.jpg",
+        yNombre: 670,
+        xDia: 625,
+        yDia: 845,
+        xMes: 1115,
+        yMes: 845,
+        adjuntos: ["../public/bonos/Capacitacion JDT CAPACITACIONES.pdf", "../public/bonos/Joyeria JDT Capacitaciones.pdf", "../public/bonos/Protectores de celulares personalizados JDT Capacitaciones.pdf"]
+      }
     };
 
     async function buscarNombre(cedula, gid) {
@@ -127,7 +149,8 @@
     function generarCertificado(nombre, config) {
       const fecha = new Date();
       const dia = fecha.getDate();
-      const mes = fecha.toLocaleString('default', { month: 'long' });
+      const mes = fecha.toLocaleDateString('es-ES', { month: 'long' });
+      const mesCapitalizado = mes.charAt(0).toUpperCase() + mes.slice(1);
 
       const canvas = document.getElementById('certCanvas');
       const ctx = canvas.getContext('2d');
@@ -138,21 +161,37 @@
         ctx.clearRect(0, 0, canvas.width, canvas.height);
         ctx.drawImage(fondo, 0, 0, canvas.width, canvas.height);
 
+        // Nombre
         ctx.fillStyle = '#000000';
         ctx.font = 'bold 70px Arial';
         ctx.textAlign = 'center';
         ctx.fillText(nombre.toUpperCase(), canvas.width / 2, config.yNombre);
 
-
+        // Fecha (día y mes)
         ctx.font = '28px Arial';
         ctx.textAlign = 'left';
-        ctx.fillText(dia, config.xDia, 962);
-        ctx.fillText(mes, config.xMes, 962);
+        ctx.fillText(dia, config.xDia, config.yDia);
+        ctx.fillText(mesCapitalizado, config.xMes, config.yMes);
 
+        // Descargar
         const link = document.createElement('a');
         link.download = `certificado_${nombre}.jpg`;
         link.href = canvas.toDataURL('image/jpeg', 1.0);
         link.click();
+
+        // Descargar archivos adjuntos si existen
+        if (config.adjuntos && Array.isArray(config.adjuntos)) {
+          config.adjuntos.forEach(url => {
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = url.split('/').pop(); // toma el nombre del archivo automáticamente
+            a.style.display = 'none';
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+          });
+        }
+
       };
     }
   </script>
