@@ -23,5 +23,10 @@
         "name": "3750 IMÁGENES DE ALTA RESOLUCIÓN",
         "description": "3750 IMÁGENES DE ALTA RESOLUCIÓN",
         "image": "../IMG/cursos/imagenes.jpg"
+    },
+    {
+        "name": "SUPERFICIES CON GRANITO Y RESINA EPOXICA",
+        "description": "SUPERFICIES CON GRANITO Y RESINA EPOXICA",
+        "image": "../IMG/cursos/granito.jpg"
     }
 ]
