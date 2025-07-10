@@ -28,5 +28,10 @@
         "name": "SUPERFICIES CON GRANITO Y RESINA EPOXICA",
         "description": "SUPERFICIES CON GRANITO Y RESINA EPOXICA",
         "image": "../IMG/cursos/granito.jpg"
+    },
+    {
+        "name": "CURSO DE BISUTERÍA Y DISEÑARTE",
+        "description": "CURSO DE BISUTERÍA Y DISEÑARTE",
+        "image": "../IMG/cursos/diseñarte.jpg"
     }
 ]
